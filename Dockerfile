@@ -30,6 +30,8 @@ RUN echo "net.ipv4.tcp_max_tw_buckets=65536" >> /etc/sysctl.conf && \
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 8888/tcp
