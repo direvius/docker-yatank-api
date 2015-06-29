@@ -35,5 +35,3 @@ RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 8888/tcp
-
-CMD ["-c /yandex-example-configs/load.ini"]
